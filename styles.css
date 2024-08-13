@@ -190,3 +190,106 @@ section .header {
 .card > a {
   display: block;
 }
+
+/*==============THAY ĐỔI===================*/
+
+/* Nghiên cứu */
+.research .header{
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
+.research .container{
+    display: flex;
+    margin-top: 32px;
+}
+
+.research-left{
+    width: 40%;
+    padding: 0 20px;
+    color: white;
+}
+
+.research-right{
+    width: 60%;
+    padding: 0 20px;
+    color: white;
+}
+
+.research-left>h4{
+  color: #00e49e;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.research-left>p{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.research-left>button{ 
+    margin-top: 15px;
+    padding: 12px 18px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.research-left>button:hover{
+    transform: translate(0, -10px);
+    box-shadow: 0px 0px 12px white;
+}
+
+.research-right .research-content{
+    background-color: #1a1a4b;
+    padding: 1rem 3.5rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.research-content > p:first-child{
+  /* color: #F08080; */
+  color: #B6FFBB;
+}
+
+.research-content>h4{
+    font-size: 25px;
+    line-height: 40px;
+    color: #00e49e;
+}
+.research-content .description{
+    line-height: 25px;
+}
+
+.research-content .authors{
+  color: #B6FFBB;
+    padding: 10px;
+    font-weight: bold;
+}
+.research-content .author{
+    padding-left: 10px;
+    line-height: 25px;
+}
+
+.swiper-navBtn{
+  color: #000 !important;
+  height: 40px !important;
+  width: 40px !important;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 18px !important;
+}
+
+.swiper-navBtn:hover{
+  box-shadow: 0px 0px 20px white;
+}
+
+
+
+
