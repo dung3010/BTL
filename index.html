@@ -9,51 +9,49 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-    <!-- ===============THAY ĐỔI=============== -->
-    <!-- Swiper CSS -->
-    <script type="module">
-      import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.1.9/+esm'
-      </script>
 
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    
-    
-
-    
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
     <nav>
       <div class="logo">
         <a href="https://ou.edu.vn/">
-          <img src="img/logo-white.png" alt="logo" />
+          <img src="img/logo.png" alt="logo" />
         </a>
       </div>
       <ul class="links">
         <li class="link">
           <a href="#"><i class="fa-solid fa-house"></i>Trang chủ</a>
         </li>
-        <li class="link">
+        <li id="link1" class="link">
           <a href="#"><i class="fa-solid fa-book"></i>Chương trình</a>
         </li>
-        <li class="link">
+        <li id="link2" class="link">
           <a href="#"><i class="fa-solid fa-address-card"></i>Giới thiệu</a>
         </li>
-        <li class="link">
+        <li id="link3" class="link">
+          <a href="#"><i class="fa-solid fa-newspaper"></i>Tin tức</a>
+        </li>
+        <li id="link4" class="link">
+          <a href="#"><i class="fa-solid fa-graduation-cap"></i>Nghiên cứu</a>
+        </li>
+        <li id="link5" class="link">
           <a href="#"><i class="fa-solid fa-phone-volume"></i>Liên hệ</a>
         </li>
+        
       </ul>
-      <button class="bt">Click</button>
+      
     </nav>
 
     <header class="container">
       <div class="contents">
+        <span class="content"></span>
+        <span class="content"></span>
         <span class="content"></span>
         <span class="content"></span>
         <h1>
@@ -63,315 +61,258 @@
         <h4>
           <i><b>-Hãy biến ước mơ của bạn thành sự thật-</b></i>
         </h4>
+        <button class="bt">Đăng nhập</button>
       </div>
       <div class="image">
         <img
-          src="img/—Pngtree—mobile phone it flat wind_5472886.png"
+          src="img/chaomung.png"
           alt="header"
         />
       </div>
     </header>
-
-    <section class="container">
-      <h2 class="header">
-        Giới thiệu <i class="fa-solid fa-address-card"></i>
-      </h2>
-      <div class="banner">
-
-        <div class="card">
-          <a href="#">
-            <span><i class="fa-solid fa-computer"></i></span>
-            <div class="gioithieu">
-              <h4>Các ngành học</h4>
-              <ul>
-                <li>Khoa học máy tính</li>
-                <li>Công nghệ thông tin</li>
-                <li>Hệ thống Thông tin quản lý</li>
-                <li>Trí tuệ nhân tạo</li>
-              </ul>
-            </div>
-          </a>
+      <!-- CHƯƠNG TRÌNH -->
+    <main>
+      <section class="container">
+        <h2 class="header">Chương trình <i class="fa-solid fa-book"></i></h2>
+        <div class="banner">
+          <div class="image_chuongtrinh">
+            <img src="img/chuongtrinh.png" alt="chuongtrinh" />
+          </div>
+          <div class="card">
+            <a href="chuongtrinhhoc.html">
+              <span><i class="fa-solid fa-folder"></i></i></span>
+              <div class="gioithieu">
+                <h4>Chương trình học</h4>
+                <ul>
+                  <li>Sơ lược các môn học</li>
+                  <li>Lộ trình học</li>
+                  <li>Giáo trình</li>
+                  <li>Công nghệ học tập</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="chuongtrinhhocbong.html">
+              <span><i class="fa-solid fa-dollar-sign"></i></span>
+              <div class="gioithieu">
+                <h4>Chuơng trình học bổng</h4>
+                <ul>
+                  <li>
+                    Học bổng Khuyến khích học tập
+                  </li>
+                  <li>Học bổng Tài năng....</li>
+                </ul>
+              </div>
+            </a>
+          </div>
         </div>
+      </section>
 
-        <div class="card">
-          <a href="#">
-            <span><i class="fa-solid fa-book-open"></i></span>
-            <div class="gioithieu">
-              <h4>Chuơng trình đào tạo</h4>
-              <ul>
-                <li>
-                  Khối kiến thức giáo dục đại cương bao gồm các môn học cơ sở về
-                  tin học: (cơ sở lập trình, nhập môn tin học …)
-                </li>
-                <li>Khối kiến thức chuyên ngành....</li>
-              </ul>
-</div>
-          </a>
+      <hr>
+
+      <!-- GIỚI THIỆU -->
+      <section class="container">
+        <h2 class="header">
+          Giới thiệu <i class="fa-solid fa-address-card"></i>
+        </h2>
+        <div class="banner">
+          <div class="card">
+            <a href="cacnganhhoc.html">
+              <span><i class="fa-solid fa-computer"></i></span>
+              <div class="gioithieu">
+                <h4>Các ngành học</h4>
+                <ul>
+                  <li>Khoa học máy tính</li>
+                  <li>Công nghệ thông tin</li>
+                  <li>Hệ thống Thông tin quản lý</li>
+                  <li>Trí tuệ nhân tạo</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="chuongtrinhdaotao.html">
+              <span><i class="fa-solid fa-book-open"></i></span>
+              <div class="gioithieu">
+                <h4>Chuơng trình đào tạo</h4>
+                <ul>
+                  <li>
+                    Khối kiến thức giáo dục đại cương bao gồm các môn học cơ sở về
+                    tin học: (cơ sở lập trình, nhập môn tin học …)
+                  </li>
+                  <li>Khối kiến thức chuyên ngành....</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="image_gioithieu">
+            <img src="img/gioithieu.png" alt="gioithieu" />
+          </div>
         </div>
+      </section>
 
-        <div class="card">
-          <a href="#">
-            <span><i class="fa-solid fa-book-open-reader"></i></span>
-            <div class="gioithieu">
-              <h4>Hoạt động sinh viên</h4>
-              <ul>
-                <li>
-                  Khoa có các mối quan hệ hợp tác với các doanh nghiệp trong
-                  lĩnh vực CNTT...
-                </li>
-                <li>
-                  Các câu lạc bộ học thuật như: Câu lạc bộ Anh văn, Câu lạc bộ
-                  Lập trình,...
-                </li>
-              </ul>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
+      <hr>
 
-    <section class="container">
-      <h2 class="header">
-        Giới thiệu <i class="fa-solid fa-address-card"></i>
-      </h2>
-      <div class="banner">
+          <!-- TIN TỨC -->
 
-        <div class="card">
-          <a href="#">
-            <span><i class="fa-solid fa-computer"></i></span>
-            <div class="gioithieu">
-              <h4>Các ngành học</h4>
-              <ul>
-                <li>Khoa học máy tính</li>
-                <li>Công nghệ thông tin</li>
-                <li>Hệ thống Thông tin quản lý</li>
-                <li>Trí tuệ nhân tạo</li>
-              </ul>
-            </div>
-          </a>
-        </div>
 
-        <div class="card">
-          <a href="#">
-            <span><i class="fa-solid fa-book-open"></i></span>
-            <div class="gioithieu">
-              <h4>Chuơng trình đào tạo</h4>
-              <ul>
-                <li>
-                  Khối kiến thức giáo dục đại cương bao gồm các môn học cơ sở về
-                  tin học: (cơ sở lập trình, nhập môn tin học …)
-                </li>
-                <li>Khối kiến thức chuyên ngành....</li>
-              </ul>
-            </div>
-          </a>
-        </div>
 
-        <div class="card">
-          <a href="#">
-            <span><i class="fa-solid fa-book-open-reader"></i></span>
-            <div class="gioithieu">
-              <h4>Hoạt động sinh viên</h4>
-              <ul>
-                <li>
-                  Khoa có các mối quan hệ hợp tác với các doanh nghiệp trong
-                  lĩnh vực CNTT...
-                </li>
-                <li>
-                  Các câu lạc bộ học thuật như: Câu lạc bộ Anh văn, Câu lạc bộ
-                  Lập trình,...
-                </li>
-              </ul>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
 
-    <section class="container">
-      <h2 class="header">
-        Giới thiệu <i class="fa-solid fa-address-card"></i>
-      </h2>
-      <div class="banner">
-
-        <div class="card">
-          <a href="#">
-            <span><i class="fa-solid fa-computer"></i></span>
-            <div class="gioithieu">
-              <h4>Các ngành học</h4>
-              <ul>
-<li>Khoa học máy tính</li>
-                <li>Công nghệ thông tin</li>
-                <li>Hệ thống Thông tin quản lý</li>
-                <li>Trí tuệ nhân tạo</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="#">
-            <span><i class="fa-solid fa-book-open"></i></span>
-            <div class="gioithieu">
-              <h4>Chuơng trình đào tạo</h4>
-              <ul>
-                <li>
-                  Khối kiến thức giáo dục đại cương bao gồm các môn học cơ sở về
-                  tin học: (cơ sở lập trình, nhập môn tin học …)
-                </li>
-                <li>Khối kiến thức chuyên ngành....</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="#">
-            <span><i class="fa-solid fa-book-open-reader"></i></span>
-            <div class="gioithieu">
-              <h4>Hoạt động sinh viên</h4>
-              <ul>
-                <li>
-                  Khoa có các mối quan hệ hợp tác với các doanh nghiệp trong
-                  lĩnh vực CNTT...
-                </li>
-                <li>
-                  Các câu lạc bộ học thuật như: Câu lạc bộ Anh văn, Câu lạc bộ
-                  Lập trình,...
-                </li>
-              </ul>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-      
-      <!-- =========================THAY ĐỔI======================== -->
-    
-     <!-- TIN TỨC -->
-      <section class="news">
-        <div class="container">
-          <h2 class="header">Tin tức&#128240;</h2>
-          <div class="swipers">
-            <div class=" news-container swiper">
-              <div class="button-container">
-                <div class=" news-contents swiper-wrapper">
-                  <div class=" news-content swiper-slide">
-                    <div class="news-image">
-                      <img src="images/tintuc1.png" alt="tin tuc">
-                      <p>Xem chi tiết</p>
+          <section id="news">
+            <h2 class="header">Tin tức&#128240;</h2>
+            <div class="slider">
+              <div class="navnotpag">
+                <div>
+                  <button class="navigation" id="prevNews">
+                    &#8249;
+                  </button>
+                </div>
+                
+                <div class="navigation-content">
+                    <div class="list">
+                        <div class="item">
+                            <div class="news-image">
+                                <img src="img/tintuc2.jpg" alt="tin tuc">
+                                <p>Xem chi tiết</p>
+                            </div>
+                            <div class="news-title">
+                                <p class="title">THÔNG BÁO: LỊCH THI TRÊN MÁY HỌC KỲ 3 NĂM HỌC 2023-2024</p>
+                            </div>    
+                            <div class="news-date">
+                                <p><ion-icon name="calendar-outline"></ion-icon>14/08/2024</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="news-image">
+                                <img src="img/tintuc1.jpg" alt="tin tuc">
+                                <p>Xem chi tiết</p>
+                            </div>
+                            <div class="news-title">
+                                <p class="title">THÔNG BÁO: TỔ CHỨC CHUYÊN ĐỀ PHƯƠNG PHÁP THỰC HIỆN ĐỒ ÁN VÀ KHÓA LUẬN TỐT NGHIỆP (NGÀNH KHMT CLC)</p>
+                            </div>    
+                            <div class="news-date">
+                                <p><ion-icon name="calendar-outline"></ion-icon>11/08/2024</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="news-image">
+                                <img src="img/tintuc3.jpg" alt="tin tuc">
+                                <p>Xem chi tiết</p>
+                            </div>
+                            <div class="news-title">
+                                <p class="title">THÔNG BÁO V/V SINH HOẠT MÔN THỰC TẬP TỐT NGHIỆP HỌC KỲ 1 NĂM HỌC 2024 - 2025</p>
+                            </div>    
+                            <div class="news-date">
+                                <p><ion-icon name="calendar-outline"></ion-icon>13/08/2024</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="news-image">
+                                <img src="img/tintuc1.jpg" alt="tin tuc">
+                                <p>Xem chi tiết</p>
+                            </div>
+                            <div class="news-title">
+                                <p class="title">THÔNG BÁO: TỔ CHỨC CHUYÊN ĐỀ PHƯƠNG PHÁP THỰC HIỆN ĐỒ ÁN VÀ KHÓA LUẬN TỐT NGHIỆP (CHƯƠNG TRÌNH CHUẨN)
+                                Ngày: 30/07/2024 11:00</p>
+                            </div>    
+                            <div class="news-date">
+                                <p><ion-icon name="calendar-outline"></ion-icon>12/08/2024</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="news-image">
+                                <img src="img/tintuc2.jpg" alt="tin tuc">
+                                <p>Xem chi tiết</p>
+                            </div>
+                            <div class="news-title">
+                                <p class="title">THÔNG BÁO: LỊCH THI TRÊN MÁY HỌC KỲ 3 NĂM HỌC 2023-2024</p>
+                            </div>    
+                            <div class="news-date">
+                                <p><ion-icon name="calendar-outline"></ion-icon>14/08/2024</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                          <div class="news-image">
+                              <img src="img/tintuc3.jpg" alt="tin tuc">
+                              <p>Xem chi tiết</p>
+                          </div>
+                          <div class="news-title">
+                              <p class="title">THÔNG BÁO V/V SINH HOẠT MÔN THỰC TẬP TỐT NGHIỆP HỌC KỲ 1 NĂM HỌC 2024 - 2025</p>
+                          </div>    
+                          <div class="news-date">
+                              <p><ion-icon name="calendar-outline"></ion-icon>13/08/2024</p>
+                          </div>
+                        </div>
+                        <div class="item">
+                            <div class="news-image">
+                                <img src="img/tintuc1.jpg" alt="tin tuc">
+                                <p>Xem chi tiết</p>
+                            </div>
+                            <div class="news-title">
+                                <p class="title">THÔNG BÁO: TỔ CHỨC CHUYÊN ĐỀ PHƯƠNG PHÁP THỰC HIỆN ĐỒ ÁN VÀ KHÓA LUẬN TỐT NGHIỆP (CHƯƠNG TRÌNH CHUẨN)
+                                Ngày: 30/07/2024 11:00</p>
+                            </div>    
+                            <div class="news-date">
+                                <p><ion-icon name="calendar-outline"></ion-icon>12/08/2024</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="news-image">
+                                <img src="img/tintuc2.jpg" alt="tin tuc">
+                                <p>Xem chi tiết</p>
+                            </div>
+                            <div class="news-title">
+                                <p class="title">THÔNG BÁO: LỊCH THI TRÊN MÁY HỌC KỲ 3 NĂM HỌC 2023-2024</p>
+                            </div>    
+                            <div class="news-date">
+                                <p><ion-icon name="calendar-outline"></ion-icon>14/08/2024</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="news-title">
-                      <p class="title">[CQ] Thông báo đăng ký học phần dành cho sinh viên 
-                        ĐHCQ HK1/2024-2025</p>
-                    </div>    
-                    <div class="news-date">
-                      <p><ion-icon name="calendar-outline"></ion-icon>12/08/2024</p>
-                    </div>
-                  </div>
-                  <div class=" news-content swiper-slide">
-                    <div class="news-image">
-                      <img src="images/tintuc3.jpg" alt="tin tuc">
-                      <p>Xem chi tiết</p>
-                    </div>
-                    <div class="news-title">
-                      <p class="title">Chung kết Cuộc thi Tranh biện “Speak Out For Life” – Chỉ một sự sống 2024</p>
-                    </div>    
-                    <div class="news-date">
-                      <p><ion-icon name="calendar-outline"></ion-icon>06/08/2024</p>
-                    </div>
-                  </div>
-                  <div class=" news-content swiper-slide">
-                    <div class="news-image">
-                      <img src="images/tintuc1.png" alt="tin tuc">
-                      <p>Xem chi tiết</p>
-                    </div>
-                    <div class="news-title">
-                      <p class="title">[CNTN] Thứ tự bảo vệ
-                        , thời gian bảo vệ, danh sách giảng 
-                        viên phản biện khóa luận tốt nghiệp 
-                        lớp CNTN2020 (T8/2024)</p>
-                    </div>    
-                    <div class="news-date">
-                      <p><ion-icon name="calendar-outline"></ion-icon>02/08/2024</p>
-                    </div>
-                  </div>
-                  <div class=" news-content swiper-slide">
-                    <div class="news-image">
-                      <img src="images/tintuc2.png" alt="tin tuc">
-                      <p>Xem chi tiết</p>
-                    </div>
-                    <div class="news-title">
-                      <p class="title">Về việc cập nhật thông tin chuyên ngành cho sinh viên Khóa tuyển 2021 trở về trước</p>
-                    </div>    
-                    <div class="news-date">
-                      <p><ion-icon name="calendar-outline"></ion-icon>02/08/2024</p>
-                    </div>
-                  </div>
-                  <div class=" news-content swiper-slide">
-                    <div class="news-image">
-                      <img src="images/tintuc1.png" alt="tin tuc">
-                      <p>Xem chi tiết</p>
-                    </div>
-                    <div class="news-title">
-                      <p class="title">Hội nghị khoa học quốc gia lần thứ XVII (FAIR’2024) với chủ đề: “Trí tuệ nhân tạo trong chuyển đổi số”.</p>
-                    </div>    
-                    <div class="news-date">
-                      <p><ion-icon name="calendar-outline"></ion-icon>09/08/2024</p>
-                    </div>
-                  </div>
-                  <div class=" news-content swiper-slide">
-                    <div class="news-image">
-                      <img src="images/tintuc1.png" alt="tin tuc">
-                      <p>Xem chi tiết</p>
-                    </div>
-                    <div class="news-title">
-                      <p class="title">[CQ] Quy trình nộp đề tài 
-                        tốt nghiệp SAU bảo vệ khóa 2020, đợt 2 
-                        (bảo vệ tháng 7, 8/2024)</p>
-                    </div>    
-                    <div class="news-date">
-                      <p><ion-icon name="calendar-outline"></ion-icon>09/08/2024</p>
-                    </div>
-                  </div>
-                  <div class=" news-content swiper-slide">
-                    <div class="news-image">
-                      <img src="images/tintuc1.png" alt="tin tuc">
-                      <p>Xem chi tiết</p>
-                    </div>
-                    <div class="news-title">
-                      <p class="title">[CNTN] Thứ tự bảo vệ
-                        , thời gian bảo vệ, danh sách giảng 
-                        viên phản biện khóa luận tốt nghiệp 
-                        lớp CNTN2020 (T8/2024)</p>
-                    </div>    
-                    <div class="news-date">
-                      <p><ion-icon name="calendar-outline"></ion-icon>02/08/2024</p>
-                    </div>
-                  </div>
-                  <div class=" news-content swiper-slide">
-                    <div class="news-image">
-                      <img src="images/tintuc2.png" alt="tin tuc">
-                      <p>Xem chi tiết</p>
-                    </div>
-                    <div class="news-title">
-                      <p class="title">Về việc cập nhật thông tin chuyên ngành cho sinh viên Khóa tuyển 2021 trở về trước</p>
-                    </div>    
-                    <div class="news-date">
-                      <p><ion-icon name="calendar-outline"></ion-icon>04/08/2024</p>
-                    </div>
-                  </div>
+                </div>
+        
+                <div>
+                  <button class="navigation" id="nextNews">
+                    &#8250;
+                  </button>
                 </div>
               </div>
-              <div class="swiper-button-next swiper-navBtn"></div>
-              <div class="swiper-button-prev swiper-navBtn"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
+              <!-- dots pagination-->
 
-        </div>
-        
-      </section>
+              <ul class="dots">
+                <li class="activeNews"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+        </section>
+
+        <hr>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -394,10 +335,17 @@
           </div>
 
           <div class="research-right">
-            <div class="right-container swiper">
-              <div class="container-swiper">
-                <div class="research-contents swiper-wrapper">
-                  <div class="research-content swiper-slide">
+            <div class="slider">
+              <div class="research-content">  
+
+                <div>
+                  <button class="navigation" id="prevResearch">
+                    &#8249;
+                  </button>
+                </div>
+
+                <div class="list">
+                  <div class="item activeResearch">
                     <p>2024</p>
                       <h4>A secure user authentication scheme for crypto-wallet in 
                         IoT environment</h4>
@@ -416,7 +364,7 @@
                           <li>Duong Anh Duc</li>
                       </ul>
                   </div>
-                  <div class="research-content swiper-slide">
+                  <div class="item">
                     <p>2023</p>
                     <h4>New Results on Erasure Combinatorial Batch Codes</h4>
                     <p class="description">We investigate in this work the problem of
@@ -437,39 +385,164 @@
                         <li>Nguyen Dinh Thuc</li>
                     </ul>
                   </div>
-                  <div class="research-content swiper-slide">
-                  <p>2023</p>
-                  <h4>A syntax&#8208;aware deep&#8208;learning model for 
-                    biomedical semantic role labelling</h4>
-                  <p class="description">A deep learning model for biomedical semantic 
-                    role labeling was build. Semantic role labeling is a useful task 
-                    that enables the computer to comprehend the key facts expressed in 
-                    each sentence, and is a necessary first step in the resolution of 
-                    several other semantic-related tasks, such as event extraction, 
-                    entity extraction, and Q-A systems... Semantic role labeling is a 
-                    domain-dependent task. In the biomedical field, semantics are 
-                    transmitted via more intricate grammatical structures and 
-                    dependencies...</p>
-                  <p class="authors">Các tác giả</p>
-                  <ul class="author">
-                      <li>Tuan Nguyen Hoai Duc</li>
-                      <li>Nguyen Truong Son</li>
-                  </ul>
+                  <div class="item">
+                    <p>2023</p>
+                    <h4>A syntax&#8208;aware deep&#8208;learning model for 
+                      biomedical semantic role labelling</h4>
+                    <p class="description">A deep learning model for biomedical semantic 
+                      role labeling was build. Semantic role labeling is a useful task 
+                      that enables the computer to comprehend the key facts expressed in 
+                      each sentence, and is a necessary first step in the resolution of 
+                      several other semantic-related tasks, such as event extraction, 
+                      entity extraction, and Q-A systems... Semantic role labeling is a 
+                      domain-dependent task. In the biomedical field, semantics are 
+                      transmitted via more intricate grammatical structures and 
+                      dependencies...</p>
+                    <p class="authors">Các tác giả</p>
+                    <ul class="author">
+                        <li>Tuan Nguyen Hoai Duc</li>
+                        <li>Nguyen Truong Son</li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <p>2024</p>
+                    <h4>A secure user authentication scheme for crypto-wallet in 
+                      IoT environment</h4>
+                    <p class="description">Presently, the prevalent environment is the 
+                      Internet of things (IoT) since it can connect a large number of 
+                      different gadgets in an increasingly wide range, and lead to the 
+                      risk of information leakage. In addition, the field of 
+                      cryptocurrency is a hot topic with many sophisticated thefts, so 
+                      the progressive utilization of crypto-wallets should protect 
+                      transactions from eavesdropping. Clearly, IoT could be a promising 
+                      and challenging environment for quick and secure cryptocurrency...</p>
+                    <p class="authors">Các tác giả</p>
+                    <ul class="author">
+                        <li>Truong Toan Thinh</li>
+                        <li>Tran Minh Triet</li>
+                        <li>Duong Anh Duc</li>
+                    </ul>
                   </div>
                 </div>
+              
+                <div>
+                  <button class="navigation" id="nextResearch">
+                    &#8250;
+                  </button>
+                </div>
+
               </div>
-              <div class="swiper-button-next swiper-navBtn"></div>
-              <div class="swiper-button-prev swiper-navBtn"></div>
+
             </div>
+      
           </div>
         </div>
       </section>
 
+      <hr>
 
-    <footer></footer>
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+      <!-- TÀI TRỢ -->
+      <section class="sponsor">
+        <h2 class="header">Nhà tài trợ <ion-icon name="school"></ion-icon></h2>
+        <div class="slider">
+          <div class="list">
+            <div class="item"><img src="img/sponsor1.png" alt="Tài trợ 1"></div>
+            <div class="item"><img src="img/sponsor2.png" alt="Tài trợ 2"></div>
+            <div class="item"><img src="img/sponsor3.png" alt="Tài trợ 3"></div>
+            <div class="item"><img src="img/sponsor4.png" alt="Tài trợ 4"></div>
+            <div class="item"><img src="img/sponsor5.png" alt="Tài trợ 5"></div>
+            <div class="item"><img src="img/sponsor6.png" alt="Tài trợ 5"></div>
+            <div class="item"><img src="img/sponsor7.png" alt="Tài trợ 5"></div>
+            <div class="item"><img src="img/sponsor8.png" alt="Tài trợ 5"></div>
+          </div>  
+        </div>
+      </section>
+    </main>
+
+<!--==============Thanh socials bar===============-->
+
+    <section class="socials-bar">
+      <div class="list">
+        <a class="youtube" href="https://www.youtube.com/c/HoChiMinhCityOpenUniversity" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a class="facebook" href="https://www.facebook.com/TruongDaiHocMo/?locale=vi_VN" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a class="instagram" href="https://www.instagram.com/ou.edu.vn/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a class="tiktok" href="https://www.tiktok.com/@hcmcou" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+     </div>
+  </section>
+
+  <!--============Button to top==============-->
+
+  <div id="myBtn">
+    <button title="Go to top"><ion-icon name="arrow-round-up"></ion-icon></button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+     <footer>
+    <div class="container">
+      <div class="column">
+        <div class="logo">
+          <a href="https://ou.edu.vn/">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="lienhe">
+          <h4>Liên hệ</h4>
+          <div><b>Địa chỉ</b>: Phòng 604, số 35 - 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, Thành phố Hồ Chí Minh, Việt Nam</div>
+          <div>Điện thoại: (84-028) 3838.6603</div>
+          <p class="mailto"><a href="mailto:fcs@ou.edu.vn">Email: fcs@ou.edu.vn</a><i class="fa-solid fa-envelope"></i></p>
+          <div class="socials">
+             <a href="https://www.youtube.com/c/HoChiMinhCityOpenUniversity" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+             <a href="https://www.facebook.com/TruongDaiHocMo/?locale=vi_VN" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+             <a href="https://www.instagram.com/ou.edu.vn/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+             <a href="https://www.tiktok.com/@hcmcou" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h4>Cơ sở học tập</h4>
+        <p><b>Địa điểm</b>: <a href="https://maps.app.goo.gl/sP1ucB97jSE11Gme6">Khu dân cư Nhơn Đức, Huyện Nhà Bè, TP. Hồ Chí Minh.</a></p>
+      </div>
+      <div class="column">
+        <h4>Danh mục</h4>
+        <ul>       
+          <li>Chương trình</li> 
+          <li>Giới thiệu</li> 
+          <li>Tin tức</li>
+          <li>Nghiên cứu</li>
+          <li>Liên hệ</li>         
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © 2024 VTL-NHD
+    </div>
+  </footer>
+
+   
+
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>
