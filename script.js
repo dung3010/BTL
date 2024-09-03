@@ -274,6 +274,11 @@ window.addEventListener('resize', updateListSize);
 //=========Button to top=========================
 let mybutton = document.getElementById("myBtn");
 
+// Đảm bảo trang cuộn về đầu khi tải lại
+window.scrollTo(0, 0);
+scrollFunction();
+
+    
 // Khi kéo xuống 100px nutton hiện ra
 window.onscroll = function() {scrollFunction()};
 
