@@ -1,0 +1,512 @@
+:root{
+    --news-radius: 10px;
+    --research-radius: 25px;
+    --width-sponsor: 250px;
+    --heigth-sponsor: 200px;
+    --quantity-sponsor: 8;
+  }
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #08083a;
+}
+
+img {
+    width: 100%;
+}
+
+  
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 2rem;
+}
+
+.content {
+  position: absolute;
+  box-shadow: 0 0 1800px 400px #3c3ce9; /*shadow cho 1 vùng*/
+  z-index: -100; /*Xếp nền chữ trên cái phông nền*/
+}
+
+/*====================NAVBAR==================== */
+nav{
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 130px;
+    transition: .8s;
+}
+
+
+  /* Tạo một element không có nội dung.
+   trước phần tử <nav>, thêm các hiệu ứng hoặc nền mà 
+   không cần thêm phần tử HTML thêm vào. */
+nav::before{
+    content: '';
+    position: absolute; /* căn theo phần tử nav kích thước bằng nav*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 143, 143, 0.1);
+    backdrop-filter: blur(50px);/* làm mờ với bán kính 50px */
+    z-index: -1;
+}
+
+  /* flex li thành 1 hàng */
+nav ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: white;
+}
+
+/* ẩn icon menu */
+nav .menu-icon{
+    display: none;
+    border-radius: 50%;
+}
+nav .menu-icon .icon{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+  /*hiệu ứng lúc ấn icon menu*/
+#navMenuLinks{
+    transition: all .7s;
+    z-index: 1;
+}
+
+/* responsive navbar*/
+@media (max-width: 1000px) {
+    nav ul{
+      position: absolute;
+      top: 130px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background-color: rgba(237, 143, 143, 0.1);
+      backdrop-filter: blur(50px);
+      gap: 0;
+      overflow: hidden;
+      box-shadow: 0px 0px 6px rgb(245, 181, 181);
+    }
+    nav ul li{
+      padding: 20px;
+      border-top: 1px solid #4a4a6a;
+      width: 100%;
+      /*tạo mặt nạ cho phần tử*/
+      mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 30% 70%, /*từ 30% đến 70% sẽ thấy rõ*/
+        transparent
+      );
+    }
+    /* hiện icon menu*/
+    nav .menu-icon{
+      display: block;
+    }
+}
+
+.logo {
+    padding-top: 10px;
+    max-width: 150px;
+}
+
+
+/*========================= NỘI DUNG ======================*/
+
+h1 {
+    text-align: center;
+    color: #00e49e;
+}
+
+.hocbong{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.noidung{
+  display: flex;
+  padding: 1rem 1rem;
+  color: white;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.noidung h2{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  border: 5px solid #00e49e;
+  border-radius: 40px;
+  padding: 30px 10px;
+  transition: .5s;
+  z-index: 1;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.noidung h2.showContent{
+  padding: 45px 10px;
+  width: 30%;
+}
+
+
+
+.noidung div{
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.noidung div.showContent{
+  width: 70%;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+.noidung div h3{
+  padding: 20px 10px 0 10px;
+  color: white;
+}
+
+
+/* .noidung div p i{
+  margin-right: 30px;
+  padding: 20px;
+}
+
+.noidung div p i::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 100%;
+  background-color: #E8F0FE;
+  border-radius: 50%;
+  transition: width 0.3s ease;
+  z-index: -10; 
+}
+  
+
+.noidung div p:hover i::before{
+  width: 100%;
+  border-radius: 40px;
+} */
+
+
+
+  /*===========SOCIALS BAR================*/
+.socials-bar .list{
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: opacity .5s;
+  }
+  
+  .socials-bar .list:hover{
+    opacity: 1;
+  }
+  
+  .socials-bar .list a{
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    font-size: 20px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    transition: .8s;
+  }
+  
+  
+  .socials-bar .list a:first-child{
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .socials-bar .list a:last-child{
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .socials-bar .list .youtube{
+    background-color: #bb0000;
+  }
+  .socials-bar .list .youtube:hover{
+    background-color: white;
+    color: #bb0000;
+  }
+  
+  .socials-bar .list .facebook{
+    background-color: #3b5998;
+  }
+  .socials-bar .list .facebook:hover{
+    background-color: white;
+    color: #3b5998;
+  }
+  
+  .socials-bar .list .instagram{
+    background-color: #d83756;
+  }
+  .socials-bar .list .instagram:hover{
+    background-color: white;
+    color: #d83756;
+  }
+  
+  .socials-bar .list .tiktok{
+    background-color: black;
+  }
+  .socials-bar .list .tiktok:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  /*=====================================================*/
+   
+  
+
+
+
+
+
+
+
+/*======= Button to top =======*/
+#myBtn {
+
+  background-color: #edafb8;
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+
+  /* vòng ngoài của nút */
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
+  opacity: 0;
+  transition: .8s;
+}
+
+#myBtn.show{
+  opacity: 1;
+}
+
+#myBtn button{
+
+  /*vòng trong*/
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #08083a;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 50px;
+  font-weight: bold;
+
+
+}
+
+#myBtn:hover {
+  box-shadow: 0px 0px 30px rgb(238, 151, 151);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer .container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 300px repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+  }
+
+  footer{
+    margin-top: 100px;
+    background: linear-gradient(to bottom, rgb(79, 77, 77), #21262c 10%, transparent 80%);
+  }
+  
+  footer .column .logo {
+    max-width: 200px;
+    margin-bottom: 2rem;
+  }
+  
+  footer .column p {
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  footer .column .socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  footer .column iframe{
+    width: 100%;
+    height: 200px;
+  }
+
+  
+  
+  footer .column .socials a {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    transition: all .5 ease;
+  }
+  
+  footer .column .socials a:hover {
+    color: #08083a;
+    background-color: white;
+    border-color: white;
+  }
+  
+  footer .column h4 {
+    color: #00e49e;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  footer .column > a {
+    display: block;
+    color: white;
+    margin-bottom: 1rem;
+    transition: all .5 ease;
+  }
+  
+  footer .column > a:hover {
+    color: #00e49e;
+  }
+  
+  .column {
+    color: white;
+    line-height: 2rem;
+  }
+  
+  .column > p > a {
+    color: white;
+  }
+  
+  .column > p > a:hover {
+    color: #00e49e;
+  }
+  
+  .column ul > li a {
+    color: white;
+  }
+  
+  .column ul > li a:hover {
+    color: #00e49e;
+  }
+  
+  .mailto > a {
+    color: white;
+  }
+  
+  .copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+
+  @media screen and (max-width: 900px) {
+
+    header {
+      grid-template-columns: 1fr;
+    }
+    header .image {
+      grid-area: 1/1/2/2;
+    }
+    .banner {
+      grid-template-columns: 1fr 1fr;
+    }
+    footer .container{
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    header .image::before {
+      display: none;
+    }
+    .banner {
+      grid-template-columns: 1fr;
+    }
+    footer .container{
+      grid-template-columns: 150px 1fr;
+    }
+  
+  }
