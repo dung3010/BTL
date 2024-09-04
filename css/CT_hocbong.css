@@ -48,6 +48,7 @@ nav{
     position: relative;
     height: 130px;
     transition: .8s;
+    z-index: 10;
 }
 
 
@@ -124,6 +125,7 @@ nav .menu-icon .icon{
         black 30% 70%, /*từ 30% đến 70% sẽ thấy rõ*/
         transparent
       );
+
     }
     /* hiện icon menu*/
     nav .menu-icon{
@@ -182,18 +184,17 @@ h1 {
 
 
 .noidung div{
-  width: 0;
+  display: none;
+  /* width: 0;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; */
   transition: .5s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .noidung div.showContent{
+  display: block;
   width: 70%;
-  opacity: 1;
-  pointer-events: initial;
+  /*opacity: 1;
+  pointer-events: initial; */
 }
 
 .noidung div h3{
@@ -202,30 +203,26 @@ h1 {
 }
 
 
-/* .noidung div p i{
-  margin-right: 30px;
-  padding: 20px;
+@media (max-width: 768px){
+  .noidung{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .noidung h2{
+    padding: 10px;
+  }
+  .noidung h2.showContent{
+    padding: 10px;
+    width: 100%;
+ 
+  }
+  .noidung div.showContent{
+    width: 100%;
+  }
+
 }
 
-.noidung div p i::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 45px;
-  height: 100%;
-  background-color: #E8F0FE;
-  border-radius: 50%;
-  transition: width 0.3s ease;
-  z-index: -10; 
-}
-  
-
-.noidung div p:hover i::before{
-  width: 100%;
-  border-radius: 40px;
-} */
 
 
 
@@ -296,6 +293,16 @@ h1 {
   .socials-bar .list .tiktok:hover{
     background-color: white;
     color: black;
+  }
+
+
+
+  @media screen and (max-width: 1024px) {
+    /* responsive socialsbar */
+    .socials-bar{
+      display: none;
+    }
+
   }
   
   /*=====================================================*/

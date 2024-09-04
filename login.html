@@ -23,13 +23,14 @@
             <!-- thêm 1 thẻ phụ để tạo thêm before và after cho viền -->
             <div class="borderLine"></div>
             <form>
+              <div class="closeSignIn"><a href="index.html"><ion-icon class="iconClose" name="close"></ion-icon></a></div>
                 <h2>Sign in</h2>
-                <div class="inputBox">
+                <div id="username" class="inputBox">
                     <input type="text" required="required">
                     <span>Username</span>
                     <i></i>
                 </div>
-                <div class="inputBox">
+                <div id="password" class="inputBox">
                     <input type="password" required="required">
                     <span>Password</span>
                     <i></i>
@@ -41,7 +42,7 @@
                         <label for="checkbox">Keep me logged in</label>
                     </div>
                 </div>
-                <input type="submit" value="Login">
+                <input id="login" type="submit" value="Login">
             </form>
         </div>
 
